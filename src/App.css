@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://estaticos.muyinteresante.es/uploads/images/gallery/5fdb5c275bafe84538c58d95/1-puesta-de-sol.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1800px;
+}
+
+.card{
+  width: 35%;
+  height:auto ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 3rem;
+  box-shadow: 1px 3px 24px 3px rgba(0,0,0,0.75);
+  font-family: sans-serif;
+  background-color:#00d5ff81;
+ 
+}
+
+.card h1{
+  color:rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-weight:600;
+  font-size: 2.5rem;
+}
+
+.card h3{
+ color: rgb(24, 24, 177); ;
+ font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.container{
+ 
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.icon-cloud{
+  border: solid 2px black;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://www.psicologiadelcolor.es/wp-content/uploads/2017/03/cielo_azul.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: 350px;
+  }
+
+.icon-cloud img{
+  width: 140px;
+}
+
+
+
+.list-weather{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-weather h2{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.list-weather ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: aliceblue;
+  font-size: 18px;
+  
+}
+
+.list-weather ul li i{
+  font-size: 2.5rem;
+}
+
+.list-weather ul li b{
+  padding-left: 10px;
+
+}
+.red{
+  color: red;
+}
+
+.blue{
+  color: rgb(0, 0, 255);
+}
+
+.card button{
+  height: 3rem;
+  width: 8rem;
+  border-radius: 0.5rem;
+  background-color:#5f92ff76 ;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.card button:hover{
+
+  background-color: rgba(67, 38, 255, 0.436);
+  scale: 1.1;
+  transform: translateY(49.9%, 49.9%);
+  transition: all 0.6s;
+}
+
+
+@media screen and (max-width:678px) { 
+
+  .App{
+    background-size: 1175px;
+  }
+
+  .card{
+    width: 90%;
+    height:auto ;
+  }
+  .container{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .list-weather ul{
+    font-size: 10px;
+
+  }
+
+
+}
