@@ -24,10 +24,12 @@
   background-image: url('https://i.pinimg.com/736x/3c/3c/d3/3c3cd30f598d4afb8bf80388c0eb731f.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10rem;
+  background-size: 14rem;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 1px 5px 25px 0px rgba(0,0,0,0.75);
 
   position: absolute;
   top: 0;
@@ -45,3 +47,17 @@
   from  {transform:rotateY(0deg);}
   to {transform: rotateY(360deg);}
  } 
+
+
+ @media screen and (max-width:678px) { 
+  #container_loading{
+    display: none;
+
+  }
+
+  #loading{
+    display: none;
+  }
+
+
+ }
