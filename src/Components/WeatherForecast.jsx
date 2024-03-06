@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import natureVid from './videos/nature.mp4'
 const WeatherForecast = () => {
   
   const [weatherReport, setweatherReport] = useState ({})
@@ -45,13 +45,20 @@ const WeatherForecast = () => {
 
 
   return (
-    <div className='card'>
     
+    <div className='card relative'>
+    <div className="video-container ">
+        <video autoPlay loop muted className="object-cover w-full h-full">
+          <source src={natureVid} type="video/mp4" />
+          {/* Agrega más <source> según los formatos de video compatibles */}
+          Tu navegador no admite el elemento de video.
+        </video>
+      </div>
     <div id="container_loading">
       <div id="loading"></div>
     </div>
 
-
+    <div className={`w-full  bg-[#00d5ff81] relative overflow-hidden grid justify-items-center gap-8 rounded-md p-4`}>
       <h1>Wherather App</h1>
       <h3>Ciudad: {weatherReport.name} ,{weatherReport.sys?.country}  </h3>
       
@@ -72,9 +79,11 @@ const WeatherForecast = () => {
       
 
     </section>
-    <button onClick={() => setdegrees(!degrees)}>Degress °C / °F</button>
 
+    <button onClick={() => setdegrees(!degrees)}>Degress °C / °F</button>
     </div>
+    </div>
+
   );
 };
 

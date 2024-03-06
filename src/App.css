@@ -5,6 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
 .App{
   display: flex;
@@ -12,10 +20,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('https://estaticos.muyinteresante.es/uploads/images/gallery/5fdb5c275bafe84538c58d95/1-puesta-de-sol.jpg');
+  background-image: url('https://w11.es/wp-content/uploads/2022/10/Fondo-1-en-4K-Windows-11.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1800px;
+  background-size: cover;
 }
 
 .card{
