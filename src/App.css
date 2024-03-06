@@ -15,10 +15,7 @@
 }
 
 .App{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   height: 100vh;
   background-image: url('https://w11.es/wp-content/uploads/2022/10/Fondo-1-en-4K-Windows-11.jpg');
   background-repeat: no-repeat;
@@ -27,8 +24,7 @@
 }
 
 .card{
-  width: 35%;
-  height:auto ;
+  
   display: flex;
   flex-direction: column;
   align-items: center;

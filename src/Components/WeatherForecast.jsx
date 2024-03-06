@@ -58,7 +58,7 @@ const WeatherForecast = () => {
       <div id="loading"></div>
     </div>
 
-    <div className={`w-full  bg-[#00d5ff81] relative overflow-hidden grid justify-items-center gap-8 rounded-md p-4`}>
+    <div className={`w-full  bg-[#00d5ff81] relative overflow-hidden grid justify-items-center gap-8 rounded-md p-4 `}>
       <h1>Wherather App</h1>
       <h3>Ciudad: {weatherReport.name} ,{weatherReport.sys?.country}  </h3>
       
